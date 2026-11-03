@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Episodes — School2Podcast | Concept demo</title>
+<meta name="description" content="Browse every School2Podcast episode: study habits, teacher stories, student life. Sample episode data in this concept demo by Tiyan Digital.">
+<meta property="og:title" content="Episodes — School2Podcast">
+<meta property="og:type" content="website">
+<link rel="stylesheet" href="css/main.css">
+<link rel="icon" href="images/cover-art.jpg">
+<script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="wrap">
+    <nav class="nav" aria-label="Primary">
+      <a class="brand" href="index.html" aria-label="School2Podcast — home">
+        <span class="brand-mark" aria-hidden="true">S2P</span><span data-site>School2Podcast</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="episodes.html" aria-current="page">Episodes</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="listen.html">Listen</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <a class="btn btn-primary nav-cta" href="contact.html">Work with us</a>
+      <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="navLinks" aria-label="Menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <section class="block" style="padding-bottom:1rem">
+    <div class="wrap">
+      <p class="kicker"><span class="dot" aria-hidden="true">●</span> The archive</p>
+      <h1><span class="mask-line"><span>Every episode,</span></span> <span class="mask-line"><span>on one <em>shelf.</em></span></span></h1>
+      <p class="lede">Search the archive or filter by topic. All six entries are samples — the real build pulls these from the show's actual feed.</p>
+
+      <div class="toolbar">
+        <div class="chips" role="group" aria-label="Filter by topic">
+          <button class="chip" data-filter="all" aria-pressed="true">All</button>
+          <button class="chip" data-filter="study" aria-pressed="false">Study habits</button>
+          <button class="chip" data-filter="teachers" aria-pressed="false">Teachers</button>
+          <button class="chip" data-filter="life" aria-pressed="false">Student life</button>
+          <button class="chip" data-filter="skills" aria-pressed="false">Life skills</button>
+        </div>
+        <div class="search-box">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+          <div class="field" style="margin:0">
+            <label for="epSearch" class="skip" style="position:absolute;left:-9999px">Search episodes</label>
+            <input type="search" id="epSearch" placeholder="Search episodes…" autocomplete="off">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" style="padding-top:1.5rem">
+    <div class="wrap">
+      <div class="ep-grid" id="epGrid">
+        <a class="ep-card" data-topic="study" href="episode.html">
+          <img src="images/ep-window.jpg" alt="Illustration: paper airplane flying out of a classroom window" loading="lazy">
+          <div class="ep-card-body">
+            <span class="ep-topic">Study habits</span>
+            <h3>Ep 07 — Why homework never dies <span class="ph">Sample</span></h3>
+            <p class="ep-blurb">Practice or punishment? A teacher and a skeptic talk it out.</p>
+            <span class="ep-meta">32 min · sample length</span>
+          </div>
+        </a>
+        <a class="ep-card" data-topic="teachers" href="episode.html">
+          <img src="images/ep-notebooks.jpg" alt="Illustration: stack of notebooks and a coffee cup on a desk" loading="lazy">
+          <div class="ep-card-body">
+            <span class="ep-topic">Teachers</span>
+            <h3>Ep 06 — The teacher who changed everything <span class="ph">Sample</span></h3>
+            <p class="ep-blurb">One classroom, one mentor, and the ripple that followed.</p>
+            <span class="ep-meta">41 min · sample length</span>
+          </div>
+        </a>
+        <a class="ep-card" data-topic="life" href="episode.html">
+          <img src="images/ep-tape.jpg" alt="Illustration: vintage tape recorder with cassette tapes" loading="lazy">
+          <div class="ep-card-body">
+            <span class="ep-topic">Student life</span>
+            <h3>Ep 05 — Exams: the honest conversation <span class="ph">Sample</span></h3>
+            <p class="ep-blurb">Stress, strategy, and what actually matters after the grades.</p>
+            <span class="ep-meta">28 min · sample length</span>
+          </div>
+        </a>
+        <a class="ep-card" data-topic="skills" href="episode.html">
+          <img src="images/cover-art.jpg" alt="Illustration: vintage microphone with school doodles" loading="lazy">
+          <div class="ep-card-body">
+            <span class="ep-topic">Life skills</span>
+            <h3>Ep 04 — What school never taught about money <span class="ph">Sample</span></h3>
+            <p class="ep-blurb">Budgets, scams, and the first paycheck — the missing syllabus.</p>
+            <span class="ep-meta">36 min · sample length</span>
+          </div>
+        </a>
+        <a class="ep-card" data-topic="life" href="episode.html">
+          <img src="images/ep-window.jpg" alt="Illustration: paper airplane flying out of a classroom window" loading="lazy">
+          <div class="ep-card-body">
+            <span class="ep-topic">Student life</span>
+            <h3>Ep 03 — The quiet kid's guide to speaking up <span class="ph">Sample</span></h3>
+            <p class="ep-blurb">Participation grades, stage fright, and small brave steps.</p>
+            <span class="ep-meta">30 min · sample length</span>
+          </div>
+        </a>
+        <a class="ep-card" data-topic="study" href="episode.html">
+          <img src="images/ep-notebooks.jpg" alt="Illustration: stack of notebooks and a coffee cup on a desk" loading="lazy">
+          <div class="ep-card-body">
+            <span class="ep-topic">Study habits</span>
+            <h3>Ep 02 — Notes, naps, and the 25-minute rule <span class="ph">Sample</span></h3>
+            <p class="ep-blurb">A realistic study routine that survives a real week.</p>
+            <span class="ep-meta">26 min · sample length</span>
+          </div>
+        </a>
+      </div>
+      <div class="no-results" id="noResults" role="status">
+        <h3>No episodes match that search.</h3>
+        <p>Try a different word — or clear the topic filter.</p>
+      </div>
+      <p class="demo-note" style="margin-top:2.5rem">All episodes above are samples written for this demo. In the real build this archive fills itself from the show's podcast feed — artwork, durations, and all.</p>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-cta">
+    <div class="wrap">
+      <p class="kicker"><span class="dot" aria-hidden="true">●</span> Built as a concept demo by Tiyan Digital</p>
+      <h2>Your show deserves a home as <em>good as it sounds.</em></h2>
+      <div class="actions" style="display:flex;flex-wrap:wrap;gap:0.9rem;margin-top:1.8rem">
+        <a class="btn btn-light" href="contact.html">Start the conversation</a>
+        <a class="btn btn-outline-light" href="listen.html">Listen &amp; subscribe</a>
+      </div>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="index.html" style="color:var(--dark-ink);margin-bottom:1rem;display:inline-flex"><span class="brand-mark" aria-hidden="true">S2P</span><span data-site>School2Podcast</span></a>
+        <p>Classroom ideas, turned into conversations worth your commute. Concept website demo.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="episodes.html">Episodes</a></li>
+          <li><a href="about.html">About the show</a></li>
+          <li><a href="listen.html">Listen &amp; subscribe</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="privacy.html">Privacy policy</a></li>
+          <li><a href="terms.html">Terms of use</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Built by</h4>
+        <ul>
+          <li><a href="https://bluedhaka.com" target="_blank" rel="noopener">bluedhaka.com — our work ↗</a></li>
+          <li><a href="contact.html">Work with us</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-base">
+    <div class="wrap" style="display:flex;flex-wrap:wrap;gap:0.6rem 1.5rem;justify-content:space-between;width:100%">
+      <span>© <span id="year">2026</span> <span data-site>School2Podcast</span> — concept demo. All episode content is sample placeholder.</span>
+      <span>Designed + built by <strong style="color:var(--dark-ink)">Tiyan Digital</strong></span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/site.js"></script>
+</body>
+</html>
